@@ -1,195 +1,407 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Professional portfolio of a Software Engineer showcasing skills, projects, and contact information.">
-  <meta name="keywords" content="Portfolio, Software Engineer, Web Developer, App Developer, Projects, Skills">
-  <meta name="author" content="Maida Kosser - MK">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-   <!-- import google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
-  <!-- Link CSS -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- ===== LOADING SCREEN ===== -->
-  <div id="intro">
-    <h1 class="intro-name">Maida Kosser</h1>
-  </div>
-
-  <!-- ===== HEADER ===== -->
-  <header class="header">
-    <nav class="navbar">
-      <a href="#home" class="logo">Maida Kosser</a>
-      <div class="menu" id="menu">
-        <a href="#home" class="menu-link">Home</a>
-        <a href="#about" class="menu-link">About</a>
-        <a href="#skills" class="menu-link">Skills</a>
-        <a href="#projects" class="menu-link">Projects</a>
-        <a href="#contact" class="menu-link">Contact</a>
-      </div>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-
-    </nav>
-  </header>
-
-  <!-- ===== HOME ===== -->
-  <section id="home" class="home">
-  <div class="home-container">
-    <!-- Left Side Text -->
-    <div class="home-text">
-      <h1>I’m <span>Maida Kosser</span></h1>
-      <h2>Software Engineer |Aspiring Web & Mobile Developer</h2>
-      <p>I build clean, modern, and responsive web applications also Seamless Digital Experiences with a Focus on Clean Code & Clear Documentation.</p>
-
-      <!-- Social Links -->
-      <div class="home-socials">
-        <a href="https://www.linkedin.com/in/maida-kosser" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/MaidaKosser" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/maida_butt01" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:maidabutt2004@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-      </div><br>
-
-      <div class="home-buttons">
-        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Me</button>
-        <button onclick="window.open('resume.pdf','_blank')">Download Resume</button>
-      </div>
-
-    </div>
-
-    <!-- Right Side Image -->
-    <div class="home-image">
-      <img src="images/profile.png" alt="Maida Kosser">
-    </div>
-  </div>
-  </section>
-
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="about">
-  <h2 class="section-title">About Me</h2>
-  <p>
-    I am a passionate software engineer with expertise in front-end and back-end development. 
-    I enjoy solving problems and creating user-friendly digital experiences. 
-    Creating responsive and user-friendly websites using HTML, CSS, JavaScript, and PHP. 
-    Exploring React, Node.js & React Native to build modern web and mobile apps. <br>
-    Learning Firebase integration and improving UI/UX through real-world practice projects.
-  </p>
-
-  <!-- Skills Section -->
-  <div class="about-icons">
-    <div class="skill"><i class="fab fa-html5"></i><span>HTML5</span></div>
-    <div class="skill"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
-    <div class="skill"><i class="fab fa-js"></i><span>JavaScript</span></div>
-    <div class="skill"><i class="fab fa-php"></i><span>PHP</span></div>
-    <div class="skill"><i class="fab fa-react"></i><span>ReactJS</span></div>
-    <div class="skill"><i class="fas fa-database"></i><span>MySQL</span></div>
-    <div class="skill"><i class="fab fa-node-js"></i><span>NodeJS</span></div>
-    <div class="skill"><i class="fab fa-figma"></i><span>Figma</span></div>
-    <div class="skill"><i class="fab fa-react"></i><span>React Native</span></div>
-    <div class="skill"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
-    <div class="skill"><i class="fab fa-wordpress"></i><span>WordPress</span></div>
-    <div class="skill"><i class="fab fa-python"></i><span>Python</span></div>
-    <div class="skill"><i class="fab fa-git-alt"></i><span>Git</span></div>
-    <div class="skill"><i class="fab fa-behance"></i><span>Behance</span></div>
-    <div class="skill"><i class="fas fa-fire"></i><span>Firebase</span></div>
-    <div class="skill"><i class="fab fa-java"></i><span>Java</span></div>
-  </div>
-  </section>
-
-  <!-- ===== SKILLS ===== -->
-  <section id="skills" class="skills">
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skills-container">
-      <!-- Frontend -->
-      <div class="skills-category">
-        <h3>Frontend</h3>
-        <div class="skill"><span>HTML</span><div class="progress-bar"><div style="width:95%"></div></div></div>
-        <div class="skill"><span>CSS</span><div class="progress-bar"><div style="width:90%"></div></div></div>
-        <div class="skill"><span>JavaScript</span><div class="progress-bar"><div style="width:85%"></div></div></div>
-        <div class="skill"><span>React</span><div class="progress-bar"><div style="width:80%"></div></div></div>
-      </div>
-
-      <!-- Backend -->
-      <div class="skills-category">
-        <h3>Backend</h3>
-        <div class="skill"><span>PHP</span><div class="progress-bar"><div style="width:85%"></div></div></div>
-        <div class="skill"><span>MySQL</span><div class="progress-bar"><div style="width:80%"></div></div></div>
-        <div class="skill"><span>NodeJS</span><div class="progress-bar"><div style="width:75%"></div></div></div>
-        <div class="skill"><span>Firebase</span><div class="progress-bar"><div style="width:70%"></div></div></div>
-      </div>
-
-      <!-- UI/UX -->
-      <div class="skills-category">
-        <h3>UI/UX</h3>
-        <div class="skill"><span>Figma</span><div class="progress-bar"><div style="width:90%"></div></div></div>
-        <div class="skill"><span>Behance</span><div class="progress-bar"><div style="width:85%"></div></div></div>
-        <div class="skill"><span>Invideo</span><div class="progress-bar"><div style="width:95%"></div></div></div>
-        <div class="skill"><span>Wordpress</span><div class="progress-bar"><div style="width:80%"></div></div></div>
-      </div>
-    </div>
-  </section>
-
-    <!-- ===== PROJECTS ===== -->
-    <section id="projects" class="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="project-list">
-
-      <div class="project-card">
-        <img src="images/pos.jpg" alt="Project 1 Screenshot">
-        <h3>POS</h3>
-        <p>A responsive and dynamic POS system with figma and code, for inventory and sales management. Built using modern front-end with PHP/MySQL backend.</p>
-        <a href="https://github.com/MaidaKosser/Point-of-Sale-System" target="_blank" class="project-btn">View Repo</a>
-      </div>
-
-      <div class="project-card">
-        <img src="images/lab.png" alt="Project 2 Screenshot">
-        <h3>Lab Link App</h3>
-        <p>React Native & Firebase based file sharing platform built for the Mobile Computing course. Supports file upload and real-time database sync.</p>
-        <a href="https://github.com/MaidaKosser/Lab-Link-Medical-Lab-Test-Booking-App" target="_blank" class="project-btn">View Repo</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="contact">
-    <h2 class="section-title">Contact</h2>
-    <p class="contact-intro">
-      Discuss a project or just want to say hi? <br>
-      My inbox is open for all.
-    </p>
-
-    <div class="contact-info">
-      <p><i class="fas fa-phone"></i> +92-317-8105371</p>
-      <p><i class="fas fa-envelope"></i> maidabutt2004@gmail.com</p>
-    </div>
-
-    <!-- Social Icons -->
-    <div class="contact-socials">
-      <a href="https://www.linkedin.com/in/maida-kosser" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/MaidaKosser" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="mailto:maidabutt2004@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/maida_butt01" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
-  </section>
-
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <p>Made By Maida Kosser - MK © 2025 | All Rights Reserved</p>
-  </footer>
-
-  <!-- Link JS -->
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Maida Kosser, Software Engineer."
+    />
+    <title>Maida Kosser | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="intro"><h1 class="intro-name">Maida Kosser</h1></div>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#home" class="logo">Maida Kosser</a>
+        <div class="menu" id="menu">
+          <a href="#home" class="menu-link">Home</a
+          ><a href="#about" class="menu-link">About</a
+          ><a href="#skills" class="menu-link">Skills</a
+          ><a href="#projects" class="menu-link">Projects</a
+          ><a href="#contact" class="menu-link">Contact</a>
+        </div>
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="home">
+        <div class="home-container">
+          <div class="home-text">
+            <h1>I’m <span>Maida Kosser</span></h1>
+            <h2>Software Engineer | Aspiring Web &amp; Mobile Developer</h2>
+            <p>
+              I’m a Software Engineering student who enjoys turning ideas into
+              clean, responsive, and user-friendly digital experiences. I care
+              about thoughtful design, practical problem-solving, and writing
+              code that is easy to understand and maintain.
+            </p>
+            <div class="home-socials">
+              <a
+                href="https://www.linkedin.com/in/maida-kosser"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin"></i></a
+              ><a
+                href="https://github.com/MaidaKosser"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i></a
+              ><a
+                href="https://wa.me/923178105371"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                ><i class="fa-brands fa-whatsapp"></i></a
+              ><a href="mailto:maidakosser01@gmail.com" aria-label="Email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+            <div class="home-buttons">
+              <a href="#contact">Contact Me</a
+              ><a href="resume.pdf" target="_blank" rel="noopener"
+                >Download Resume</a
+              >
+            </div>
+          </div>
+          <div class="home-image">
+            <img src="images/profile.png" alt="Maida Kosser" />
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          I am a passionate software engineer with experience in front-end and
+          back-end development. I enjoy solving problems and creating
+          user-friendly digital experiences with HTML, CSS, JavaScript, PHP, and
+          MySQL. I’m also exploring React, Node.js, React Native, and Firebase
+          through practical projects.
+        </p>
+        <div class="about-icons">
+          <div class="skill">
+            <i class="fa-brands fa-html5"></i><span>HTML5</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-css3-alt"></i><span>CSS3</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-js"></i><span>JavaScript</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-php"></i><span>PHP</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-react"></i><span>ReactJS</span>
+          </div>
+          <div class="skill">
+            <i class="fa-solid fa-database"></i><span>MySQL</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-node-js"></i><span>NodeJS</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-figma"></i><span>Figma</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-react"></i><span>React Native</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-wordpress"></i><span>WordPress</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-python"></i><span>Python</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-git-alt"></i><span>Git</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-behance"></i><span>Behance</span>
+          </div>
+          <div class="skill">
+            <i class="fa-solid fa-fire"></i><span>Firebase</span>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-java"></i><span>Java</span>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+          <div class="skills-category">
+            <h3>Frontend</h3>
+            <div class="skill">
+              <span>HTML</span>
+              <div class="progress-bar"><div data-progress="95%"></div></div>
+            </div>
+            <div class="skill">
+              <span>CSS</span>
+              <div class="progress-bar"><div data-progress="90%"></div></div>
+            </div>
+            <div class="skill">
+              <span>JavaScript</span>
+              <div class="progress-bar"><div data-progress="85%"></div></div>
+            </div>
+            <div class="skill">
+              <span>React</span>
+              <div class="progress-bar"><div data-progress="80%"></div></div>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3>Backend</h3>
+            <div class="skill">
+              <span>PHP</span>
+              <div class="progress-bar"><div data-progress="85%"></div></div>
+            </div>
+            <div class="skill">
+              <span>MySQL</span>
+              <div class="progress-bar"><div data-progress="80%"></div></div>
+            </div>
+            <div class="skill">
+              <span>NodeJS</span>
+              <div class="progress-bar"><div data-progress="75%"></div></div>
+            </div>
+            <div class="skill">
+              <span>Firebase</span>
+              <div class="progress-bar"><div data-progress="70%"></div></div>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3>UI/UX</h3>
+            <div class="skill">
+              <span>Figma</span>
+              <div class="progress-bar"><div data-progress="90%"></div></div>
+            </div>
+            <div class="skill">
+              <span>Git &amp; GitHub</span>
+              <div class="progress-bar"><div data-progress="85%"></div></div>
+            </div>
+            <div class="skill">
+              <span>WordPress</span>
+              <div class="progress-bar"><div data-progress="80%"></div></div>
+            </div>
+            <div class="skill">
+              <span>Bootstrap</span>
+              <div class="progress-bar"><div data-progress="80%"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-list">
+          <article class="project-card">
+            <img src="images/pos.jpg" alt="Point of Sale System" />
+            <h3>POS</h3>
+            <p>
+              A responsive and dynamic POS system for inventory and sales
+              management, built with a PHP/MySQL backend.
+            </p>
+            <a
+              href="https://github.com/MaidaKosser/Point-of-Sale-System"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-btn"
+              >View Repo</a
+            >
+          </article>
+          <article class="project-card">
+            <img src="images/lab.png" alt="Lab Link App" />
+            <h3>Lab Link App</h3>
+            <p>
+              A React Native and Firebase based file-sharing platform for
+              medical lab test booking.
+            </p>
+            <a
+              href="https://github.com/MaidaKosser/Lab-Link-Medical-Lab-Test-Booking-App"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-btn"
+              >View Repo</a
+            >
+          </article>
+          <article class="project-card">
+            <img src="images/gsg.jpg" alt="GSG Project" />
+            <h3>GSG</h3>
+            <p>
+              A project repository showcasing structured development work and
+              interface implementation.
+            </p>
+            <a
+              href="https://github.com/MaidaKosser/GSG"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-btn"
+              >View Repo</a
+            >
+          </article>
+          <article class="project-card">
+            <div class="project-placeholder green">
+              <i class="fa-solid fa-hospital"></i>
+            </div>
+            <h3>Hospital Management System</h3>
+            <p>
+              A project centered on organizing essential hospital management
+              workflows.
+            </p>
+            <a
+              href="https://github.com/MaidaKosser/HospitalManagementSystem"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-btn"
+              >View Repo</a
+            >
+          </article>
+          <article class="project-card">
+            <div class="project-placeholder purple">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <h3>Insight Journal</h3>
+            <p>
+              A journal-focused project built around writing, reflection, and a
+              clean reading experience.
+            </p>
+            <a
+              href="https://github.com/MaidaKosser/Insight-Journal"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-btn"
+              >View Repo</a
+            >
+          </article>
+          <article class="project-card">
+            <div class="project-placeholder rose">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3>Mind Pulse</h3>
+            <p>
+              A wellness-focused project exploring an approachable digital
+              experience.
+            </p>
+            <a
+              href="https://github.com/MaidaKosser/Mind-Pulse"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-btn"
+              >View Repo</a
+            >
+          </article>
+          <article class="project-card">
+            <img
+              src="images/555-repair-logo.png"
+              alt="555-Inventory-Management-System"
+            />
+            <h3>Inventory Management System</h3>
+            <p>
+              A live management system for organizing inventory, tracking
+              products, and supporting day-to-day business operations.
+            </p>
+            <a
+              href="https://555-management-system.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-btn"
+              >View Repo</a
+            >
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-intro">
+          Discuss a project or just want to say hi?<br />My inbox is open for
+          all.
+        </p>
+        <div class="contact-info">
+          <p><i class="fa-solid fa-phone"></i> +92-317-8105371</p>
+          <p><i class="fa-solid fa-envelope"></i> maidakosser01@gmail.com</p>
+        </div>
+        <div class="contact-socials">
+          <a
+            href="https://www.linkedin.com/in/maida-kosser"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i></a
+          ><a
+            href="https://github.com/MaidaKosser"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i></a
+          ><a href="mailto:maidakosser01@gmail.com" aria-label="Email"
+            ><i class="fa-solid fa-envelope"></i></a
+          ><a
+            href="https://wa.me/923178105371"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>
+        Made By Maida Kosser - MK © <span id="current-year"></span> | All Rights
+        Reserved
+      </p>
+    </footer>
+    <style>
+      @font-face {
+        font-family: "Rillosta";
+        src: url("fonts/Rillosta.ttf") format("truetype");
+      }
+      .intro-name,
+      .logo {
+        font-family: "Rillosta", serif;
+      }
+      .logo {
+        font-size: 2.2rem;
+      }
+      .about-icons .skill {
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .about-icons .skill i {
+        transition:
+          transform 0.35s ease,
+          color 0.35s ease;
+      }
+      .about-icons .skill:hover {
+        box-shadow: 0 6px 14px #64321424;
+        transform: translateY(-3px);
+      }
+      .about-icons .skill:hover i {
+        color: #e6b800;
+        transform: scale(1.16) rotate(-4deg);
+      }
+    </style>
+    <script src="script.js"></script>
+  </body>
 </html>
